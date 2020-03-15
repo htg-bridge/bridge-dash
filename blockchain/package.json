@@ -1,0 +1,30 @@
+{
+  "name": "blockchain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npm-watch start",
+    "start": "functions-framework --target=chainChain"
+  },
+  "author": "Andrea Thniah",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/functions-framework": "^1.4.0",
+    "dotenv": "^8.2.0",
+    "js-sha256": "^0.9.0",
+    "request": "^2.88.0"
+  },
+  "watch": {
+    "start": "*.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/plugin-transform-async-to-generator": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "npm-watch": "^0.6.0"
+  }
+}

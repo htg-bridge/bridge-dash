@@ -1,0 +1,108 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  align-items: start;
+  height: 100vh;
+}
+
+.window-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0.5rem;
+}
+
+.window-warning {
+  color: red;
+}
+
+.window-warning > span {
+  font-weight: bolder;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  /* padding: 50px; */
+}
+
+.window-health {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 1rem;
+}
+
+.card {
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  padding: 20px;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.card h3 {
+  font-weight: 600;
+}
+
+.card img {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  max-height: 120px;
+}
+
+.card-container {
+  display: grid;
+  background-image: url(https://ionicframework.com/img/getting-started/ionic-native-card.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 80px;
+}
+
+/* @media (max-width: 990px) {
+	.card {
+		margin: 20px;
+	}
+} */
+
+/* * {
+	box-sizing: border-box;
+}
+*::before,
+*::after {
+	box-sizing: border-box;
+} */
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: inherit;
+  font-family: inherit;
+}
+button.container-button {
+  font-weight: 100;
+  color: #fff;
+  padding: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+}
+button.container-button:hover,
+button.container-button:focus,
+button.container-button:active {
+  transition: all 0.5s cubic-bezier(0.65, -0.25, 0.25, 1.95);
+  background: #fff;
+  color: black;
+  font-weight: bold;
+  border: 1px solid black;
+}
